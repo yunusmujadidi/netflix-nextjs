@@ -1,4 +1,3 @@
-// These styles apply to every route in the application
 import "../src/app/globals.css";
 import type { AppProps } from "next/app";
 
