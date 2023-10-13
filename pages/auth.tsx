@@ -13,13 +13,13 @@ const Auth = () => {
   }, []);
 
   return (
-    <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-cover">
-      <div className="bg-black bg-opacity-50 h-full w-full">
+    <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-cover bg-fixed">
+      <div className="bg-black md:bg-opacity-50 h-full w-full">
         <nav className="px-12 py-6">
-          <Image src="/images/logo.png" alt="logo" width={150} height={33} />
+          <Image src="/images/logo.png" alt="logo" width={170} height={0} />
         </nav>
         <div className="flex justify-center">
-          <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-d rounded-md w-full">
+          <div className="bg-black/70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-d rounded-md w-full md:w-3/5">
             <h2 className="text-white text-4xl mb-8 font-semibold">
               {variant === "login" ? "Sign In" : "Register"}
             </h2>
@@ -65,7 +65,7 @@ const Auth = () => {
                 onClick={toggleVariant}
                 className="text-white hover:underline cursor-pointer"
               >
-                {variant === "login" ? "Create an account" : "Login now"}
+                {variant === "login" ? "Sign up now" : "Login now"}
               </span>
             </p>
           </div>
