@@ -7,6 +7,7 @@ import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import prismadb from "../../../lib/prismadb";
 
 export default NextAuth({
   // Configure one or more authentication providers
