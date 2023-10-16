@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import useCurrentUser from "../hooks/useCurrentUser";
 
+// function to check if the user is logged in and protect the route
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
@@ -24,6 +25,7 @@ export async function getServerSideProps(context: NextPageContext) {
 
 const Profiles = () => {
   const router = useRouter();
+  // get the current user from the custom hook
   const { data: user } = useCurrentUser();
   return (
     <div className="flex items-center h-full justify-center">
