@@ -3,6 +3,7 @@ import { getSession, signOut } from "next-auth/react";
 
 import useCurrentUser from "../hooks/useCurrentUser";
 import Navbar from "../components/Navbar";
+import Billboard from "../components/Billboard";
 
 // protect the page from unauthenticated users
 export async function getServerSideProps(context: NextPageContext) {
@@ -27,7 +28,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div></div>
+      <Billboard />
     </>
   );
 }
