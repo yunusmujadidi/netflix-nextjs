@@ -9,9 +9,9 @@ const useMoviesList = () => {
   });
 
   return {
-    movies: data,
+    data,
     isLoading,
-    isError: error,
+    error,
   };
 };
 
